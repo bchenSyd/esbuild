@@ -1,0 +1,17 @@
+{
+  "name": "@bochen/lib",
+  "version": "1.0.0",
+  "description": "",
+  "files":["dist"],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist&rollup -c --bundleConfigAsCjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@rollup/plugin-babel": "^6.0.3",
+    "rollup": "^3.23.1"
+  }
+}

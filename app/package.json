@@ -1,0 +1,15 @@
+{
+  "name": "@bchen/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf build&node ./esbuild.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bochen/lib": "file:./bochen-lib-1.0.0.tgz",
+    "esbuild": "^0.17.19"
+  }
+}

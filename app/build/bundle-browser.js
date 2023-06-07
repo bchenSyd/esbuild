@@ -36,5 +36,12 @@
 
   // index.js
   var import_lib = __toESM(require_dist());
-  var render = () => (0, import_lib.sayHello)();
+  var render = async () => {
+    const name = await new Promise((res) => {
+      setTimeout(() => {
+        res("bochen");
+      }, 10);
+    });
+    (0, import_lib.sayHello)(name);
+  };
 })();
